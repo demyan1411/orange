@@ -74,7 +74,6 @@ module.exports = {
           test: /\.css$/,
           loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
       },
-      { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },
       {
         test: /\.pug$/,
         loader: "pug?pretty=true"
@@ -143,9 +142,7 @@ module.exports = {
     new ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery',
-        jquery: 'jquery',
-        "Tether": 'tether',
-        "window.Tether": "tether"
+        jquery: 'jquery'
     })
   ],
   eslint: {

@@ -5,11 +5,27 @@ body {
 }
 
 html {
-    @include rem-baseline;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
+    font-size: vw($defaultFontSize);
+    line-height: vw($defaultLineHeight);
+    font-family: $defaultFontFamily;
+    color: $defaultColor;
+}
 
+h1 {
+    font-weight: 800;
+    color: #272727;
+    font-size: vw(60px);
+    line-height: vw(72px);
+    padding-top: vw(95px);
+    margin: 0;
 }
 
 h2 {
@@ -18,7 +34,6 @@ h2 {
     ));
     font-weight: 300;
     line-height: 1.08;
-    color: $dark;
 }
 
 input[type=file] {
@@ -35,18 +50,12 @@ label {
     font-weight: 700;
 }
 
+.wrapper {
+    width: 72vw;
+    margin: 0 auto;
+}
+
 a:focus {
     text-decoration: none;
     outline: 0;
-}
-
-.block-title-block {
-    text-align: center;
-
-    h2 {
-        @include rem((
-            padding-top: 80px,
-            padding-bottom: 50px
-        ));
-    }
 }

@@ -1,0 +1,35 @@
+.main-block {
+    background: url("../images/pattern.png") 0 0 repeat;
+    height: vw(409px);
+
+    &__bg {
+        background: url("../images/main-bg.png") 0 vw(-90px) no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    &__orange-text {
+        display: inline-block;
+        color: $orange;
+        font-size: vw(24px);
+        line-height: vw(36px);
+        position: relative;
+        padding: vw(4px) 0 0 vw(16px);
+        margin: vw(-42px) 0 0 vw(310px);
+
+        &:after {
+            content: "";
+            width: vw(20px);
+            height: vw(22px);
+            background: url("../images/triangle.png") 0 0 no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        span {
+            font-style: italic;
+            display: block;
+        }
+    }
+}

@@ -1,12 +1,21 @@
 /* --------- mixins --------- */
 
-@mixin inlineblock {
+@mixin ibm {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin ib {
     display: inline-block;
     vertical-align: top;
 }
 
-@mixin clearfix {
+@function vw($target) {
+    $vw-context: (1440 * 0.01) * 1px;
+    @return ($target / $vw-context) * 1vw;
+}
 
+@mixin clearfix {
     &:before,
     &:after {
         content: " "; display: table;
@@ -18,14 +27,12 @@
 }
 
 @mixin hover-underline {
-
     &:hover {
         text-decoration: underline;
     }
 }
 
 @mixin placecolor($color: #000000) {
-
     &::-webkit-input-placeholder {
         color: $color;
     }

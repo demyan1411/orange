@@ -1,0 +1,43 @@
+.header {
+    padding: 20px 0;
+    background: $l-grey;
+
+    &__content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            &__img {
+                width: vw(140px);
+                height: auto;
+                margin-right: vw(50px);
+                @include ib;
+            }
+
+            &__text {
+                @include ib;
+                margin-top: vw(10px);
+            }
+        }
+
+        .left {
+            text-align: center;
+
+            .phone {
+                font-weight: 600;
+                color: #000;
+                text-decoration: none;
+            }
+
+            .btn {
+                display: block;
+                margin-top: vw(15px);
+            }
+        }
+    }
+}

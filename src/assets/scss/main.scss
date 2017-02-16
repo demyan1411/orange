@@ -4,7 +4,7 @@
 
 /* -------- libs ------- */
 
-@import "~bootstrap/scss/bootstrap";
+@import "~normalize.css/normalize";
 
 /* --------- mixins --------- */
 
@@ -20,7 +20,10 @@
 @import "_includes/type";
 @import "_includes/buttons";
 
-@import "./default";
+@import "default";
 
 @import "partials/header";
 @import "partials/footer";
+
+@import "main-block";
+@import "tabs-block";

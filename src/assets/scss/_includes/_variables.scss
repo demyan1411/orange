@@ -1,19 +1,14 @@
 /* --------- variables --------- */
 
-$rem-baseline: 16px;
+$defaultFontFamily: "Open Sans", sans-serif;
+$defaultFontSize: 18px;
+$defaultLineHeight: 22px;
+$defaultColor: #272727;
 
 $font-family-base: "Open Sans", sans-serif;
 $body-color: #525966;
 $border-radius: 0;
 
-$grey: #aaafb3;
-$blue: #00204d;
-$l-blue: #4d94e0;
-$dark: #2d3138;
-$green: #9bc225;
-
-$btn-primary-bg: $l-blue;
-
-$btn-secondary-color: #fff;
-$btn-secondary-bg: $green;
-$btn-secondary-border: $green;
+$orange: #ff671f;
+$l-grey: #f7f7f7;
+// $l-grey: red;

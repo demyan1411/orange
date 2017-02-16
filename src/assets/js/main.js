@@ -1,6 +1,3 @@
-import 'tether';
-import 'bootstrap/dist/js/bootstrap';
-
 import '../scss/main.scss';
 
 import Vue from 'vue';

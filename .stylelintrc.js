@@ -20,10 +20,9 @@ module.exports = {
                 'ignore': ['after-comment']
             }
         ],
-        'rule-empty-line-before': 'always',
         'declaration-empty-line-before': 'never',
         'block-closing-brace-empty-line-before': 'never',
-        'unit-whitelist': ['px', 'deg', 'em', 'rem', '%', 's']
+        'unit-whitelist': ['px', 'deg', 'em', 'rem', '%', 's', 'vw']
     },
     'defaultSeverity': 'error'
 }

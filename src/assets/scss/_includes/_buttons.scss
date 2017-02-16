@@ -1,24 +1,19 @@
-.btn:focus,
-.btn.focus,
-.btn:active:focus,
-.btn:active.focus,
-.btn.active:focus,
-.btn.active.focus {
-    outline: 0;
-}
-
 .btn {
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0;
-    @include rem((
-        width: 232px,
-        line-height: 48px,
-        font-size: 14px
-    ));
+    font-size: vw(16px);
+    line-height: vw(38px);
+    display: inline-block;
+    padding: 0 vw(24px);
+    text-decoration: none;
 
-    &.disabled,
-    &:disabled {
-        pointer-events: none;
+    &-outline {
+        color: $orange;
+        border: 1px solid $orange;
+        background: #fff;
+        transition: all linear .2s;
+
+        &:hover {
+            background: $orange;
+            color: #fff;
+        }
     }
 }
